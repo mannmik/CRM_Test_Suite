@@ -10,7 +10,7 @@
  * 
  */
 
-package com.salesforce.veeva.mikemann;
+package com.Mike_Mann;
 
 import org.testng.annotations.Test;
 import java.util.concurrent.TimeUnit;
