@@ -2,8 +2,8 @@
  * Author: Mike Mann
  * Date Created: 2.21.18
  * 
- * Veeva Take home assignment script:
- * Script tests a salesforce web application following the steps provided for the assignment.
+ * 
+ * Script tests a CRM web application 
  * Tests log in, finding a person from the account list, selecting to record a call, building
  * a call report, saving the call report, and logging out.
  * Tools used are Selenium WebDriver, TestNG, and Java
@@ -26,7 +26,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 /**
- * Test class for a salesforce application for Veeva take home assignment
+ * Test class 
  * @author Mike Mann
  *
  */
@@ -34,9 +34,9 @@ public class MikeMannBugBliltzTest
 {
 
 	private WebDriver driver;									//the webDriver interface
-	private String url = "https://login.salesforce.com/";		//base url we are to go to
-	private String username = "bb67@bb2.com";					//the username to use for login
-	private String password = "bugb1234";						//the password to use for login
+	private String url = "";									//base url we are to go to
+	private String username = "";								//the username to use for login
+	private String password = "";								//the password to use for login
 
 	/**
 	 * Logs into the salesforce application with the stored credentials
@@ -208,9 +208,6 @@ public class MikeMannBugBliltzTest
 	  
 	  //save the call report by clicking the save button
 	  driver.findElement(By.name("Save")).click();
-	  
-	  //wait until the status field of our call report submission appears
-	  //wait.until(ExpectedConditions.elementToBeClickable(By.name("Status_vod__c")));
 	  
 	  //check that our status of the call is now "saved" in the "Status" field
 	  Assert.assertEquals("Saved", driver.findElement(By.name("Status_vod__c")).getText(), "Call status is not saved.\n");
