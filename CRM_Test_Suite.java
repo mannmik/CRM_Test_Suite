@@ -47,10 +47,10 @@ public class MikeMannBugBliltzTest
   public void logIn() throws Exception
   {
 		
-		//enter the username data member, which is == "bb67@bb2.com", into the username text box
+		//enter the username data member into the username text box
 		driver.findElement(By.id("username")).sendKeys(username);						
 		
-		//enter the password data member == "bugb1234" into the password text box
+		//enter the password data member into the password text box
 		driver.findElement(By.id("password")).sendKeys(password);							
 		
 		//click Login button to complete login
@@ -260,7 +260,7 @@ public class MikeMannBugBliltzTest
 		//wait up to 30 seconds for a page to load
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		
-		//open up our url which is == "https://login.salesforce.com/"
+		//open up our url 
 		driver.get(url);	
 	  
   }
