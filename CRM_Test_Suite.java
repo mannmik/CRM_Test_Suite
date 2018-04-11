@@ -6,6 +6,7 @@
  * Script tests a CRM web application 
  * Tests log in, finding a person from the account list, selecting to record a call, building
  * a call report, saving the call report, and logging out.
+ *
  * Tools used are Selenium WebDriver, TestNG, and Java
  * 
  */
