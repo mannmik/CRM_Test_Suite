@@ -27,7 +27,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 /**
- * Test class 
+ * Test class for CRM web application
  * @author Mike Mann
  *
  */
@@ -35,7 +35,7 @@ public class MikeMannBugBliltzTest
 {
 
 	private WebDriver driver;									//the webDriver interface
-	private String url = "";									//base url we are to go to
+	private String url = "";									//base url to log in
 	private String username = "";								//the username to use for login
 	private String password = "";								//the password to use for login
 
@@ -64,9 +64,9 @@ public class MikeMannBugBliltzTest
   }
   
   /**
-   * Travels to myAccounts tab
+   * Travels to the myAccounts tab
    * Goes to Adams, Bob account page
-   * Selects record a call
+   * Then select record a call
    * @throws Exception
    */
   @Test(priority = 2)
